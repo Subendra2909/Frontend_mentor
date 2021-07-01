@@ -66,7 +66,7 @@ body {
 	color: hsl(277, 64%, 61%);
 }
 
-section {
+#section {
 	font-size: 15px;
 	margin-right: 6em;
 }
@@ -120,7 +120,7 @@ section {
 		font-size: 12px;
 	}
 
-	section {
+	#section {
 		font-size: 10px;
 	}
 }
@@ -150,7 +150,7 @@ section {
 		text-align: center;
 	}
 
-	section {
+	#section {
 		margin-right: 0;
 	}
 
@@ -203,7 +203,7 @@ section {
 		text-align: center;
 	}
 
-	section {
+	#section {
 		margin-right: 0;
 	}
 
@@ -252,7 +252,7 @@ section {
 		text-align: center;
 	}
 
-	section {
+	#section {
 		text-align: center;
 		margin-right: 0;
 	}
@@ -286,7 +286,7 @@ section {
 		font-size: 12px;
 	}
 
-	section {
+	#section {
 		font-size: 10px;
 	}
 }
