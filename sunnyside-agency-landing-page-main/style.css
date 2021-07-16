@@ -1,0 +1,475 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fraunces', serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3em 2em 3em 2em;
+    background-color: #3dbfff;
+    align-items: center;
+    color: white;
+}
+
+#burger-icon {
+    display: none;
+}
+
+#brand {
+    font-size: 40px;
+}
+
+.ul {
+    display: flex;
+    column-gap: 30px;
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+.ul li {
+    list-style: none;
+
+}
+
+.ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#contact {
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+#main-image {
+    background: url("images/desktop/image-header.jpg") center center no-repeat;
+    height: max(700px);
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 1.8em;
+    color: hsl(0, 0%, 100%);
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+#arrow {
+    padding-top: 150px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item-2, .item-3, .item-5, .item-6 {
+    height: max(600px);
+
+}
+
+.item-2{
+    background: url(images/desktop/image-transform.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.item-3 {
+    background: url(images/desktop/image-stand-out.jpg) no-repeat center;
+    background-size: cover; 
+}
+
+.item-5 {
+    background: url(images/desktop/image-graphic-design.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+.item-6 {
+    background: url(images/desktop/image-photography.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.item-1, .item-4 {
+    padding: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.item-1 h2, .item-4 h2 {
+    font-size: 45px;
+    font-family: 'Fraunces', sans-serif;
+}
+
+.item-1 p, .item-4 p {
+    margin: 2.5em 0 2em 0;
+    font-size: 18px;
+}
+
+.item-1 a, .item-4 a {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.underline-1, .underline-0 {
+    
+    height: 10px;
+    width: 9em;
+    margin-top: -12px;
+    border-radius: 30px;
+}
+
+.underline-1 {
+    background-color: hsla(7, 99%, 70%, 0.3);
+}
+
+.underline-0 {
+    background-color: hsla(51, 100%, 49%, 0.3);
+}
+
+.item-heading, .item-info {
+    text-align: center;
+}
+
+.item-heading{
+    margin-top: 14em;
+}
+
+.item-info {
+    padding: 1em 10em 0 10em;
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.item-5 h3, .item-5 p {
+    color: hsl(167, 40%, 24%);
+}
+
+.item-6 h3, .item-6 p {
+    color: hsl(198, 62%, 26%);
+}
+ 
+.clients {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    text-align: center;
+
+}
+
+#client-testimonials-heading {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#client-testimonials {
+    padding: 10em 7em 10em 7em;
+}
+
+.photos {
+    border-radius: 50%;
+    padding: 60px 0 60px 0;
+    width: 18%;
+}
+
+.client-info {
+    font-size: 18px;
+    padding: 0 20px 0 20px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.names {
+    padding-top: 3em;
+}
+
+.client-info, .job, #client-testimonials-heading, .item-1 p, .item-4 p {
+    color: #666;
+}
+
+.images {
+    display: flex;
+}
+
+.images img {
+    width: 25%;
+}
+
+footer {
+    text-align: center;
+    font-size: 18px;
+    background-color: #91d4c6;
+;
+}
+
+.footer-name {
+    padding: 90px 0 1em 0;
+    color: #2c7566;
+    font-size: 30px;
+}
+
+.ul-items {
+    display: inline-block;
+    padding: 1em 2em 4em 2em;
+    font-family: 'Barlow', sans-serif;
+    color: #4d8f7f;
+
+}
+
+.icons img {
+    padding: 0 1em 5em 1em;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .ul {
+        padding-top: 8px;
+    }
+
+    #arrow {
+        padding-top: 100px;
+    }
+
+    .item-1, .item-4 {
+    padding: 5em;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .item-2, .item-4 {
+        height: 520px;
+    }
+
+    .item-info {
+        padding: 1em 5em 0 5em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    #brand {
+        font-size: 35px;
+    }
+
+    .ul {
+        padding-top: 0px;
+    }
+
+    .item-1,.item-2, .item-3, .item-4, .item-5, .item-6 {
+        height: max(400px);
+        min-width: 385px;
+    }
+
+    .item-1, .item-4 {
+        padding: 3em;
+    }
+
+    .item-info {
+        padding: 1em 4em 0 4em;
+        font-size: 15px;
+    }
+
+    .item-heading {
+        margin-top: 9em;
+    }
+
+    .item-1 h2, .item-4 h2 {
+        font-size: 35px;
+    }
+
+    .item-1 p, .item-4 p {
+        margin: 2.5em 0 2em 0;
+        font-size: 15px;
+    }
+
+    .item-1 a, .item-4 a {
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .client-info {
+        font-size: 15px;
+        padding: 0 15px 0 15px;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .names {
+        padding-top: 1.5em;
+    }
+
+    #client-testimonials {
+        padding: 7em 6em 7em 6em;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .ul {
+        display: none;
+    }
+
+    #burger-icon {
+        display: block;
+    }
+
+    #header {
+        background: url("images/mobile/image-header.jpg") center;
+        background-size: cover;
+        text-align: center;
+    }
+
+    h1 {
+         font-size: 45px;
+    }
+
+    #arrow {
+        padding-top: 200px;
+    }
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+
+    }
+
+    .item-1, .item-4 {
+        padding: 3em;
+    } 
+
+    .item-1 h2 {
+        font-size: 35px;
+    } 
+
+    .item-1 p {
+        font-size: 20px;
+    }
+
+    
+
+    .item-1, .item-2, .item-3, .item-4, .item-5, .item-6 {
+        height: max(600px);
+    }
+
+    .item-1 {
+        order: 1;
+    }
+
+    
+    .item-2{
+        background: url(images/mobile/image-transform.jpg) no-repeat center;
+        background-size: cover;
+        order: 0;
+    }
+
+    .item-3 {
+        background: url(images/mobile/image-stand-out.jpg) no-repeat center;
+        background-size: cover; 
+        order: 2;
+    }
+
+    .item-4{
+        order: 3;
+    }
+
+    .item-5 {
+        background: url(images/mobile/image-graphic-design.jpg) no-repeat center;
+        background-size: cover;
+        order: 4;
+    }
+
+    .item-6 {
+        background: url(images/mobile/image-photography.jpg) no-repeat center;
+        background-size: cover;
+        order: 5;
+    }
+
+    .underline-0, .underline-1 {
+        display: none;
+    }
+
+    .item-1 a, .item-4 a {
+        font-family: 'Fraunces', sans-serif;
+        color: black;
+    }
+    
+
+    .item-info {
+        padding: 3em 5em 1em 5em;
+    }
+
+    .item-heading {
+        margin-top: 13em;
+        font-size: 28px;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .images img {
+        width: 100%;
+
+    }
+
+    body {
+        min-width: 470px;
+    }
+
+    .clients {
+        flex-direction: column;
+    }
+
+    .client-info {
+        font-size: 18px;
+        padding: 0 5px 0 5px;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    #client-testimonials {
+        padding: 8em 2em 8em 2em;
+    }
+
+
+    #client-testimonials-heading {
+        font-size: 22px;
+    }
+
+    .names {
+        padding-top: 1.5em;
+    }
+} 
+
+
