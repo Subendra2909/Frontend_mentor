@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Philosopher', serif;
+}
+
+header{
+	overflow-x: hidden;
+}
+nav{
+	display: flex;
+	justify-content: right;
+	padding-bottom: 5em;
+}
+
+.nav_buttons {
+	border: 2px solid #17252A;
+	border-radius: 30px;
+	padding: 1em;
+	margin: 2em 1.5em 1em 1em;
+	color: white;
+	background-color: #17252A;
+	
+	transition: 200ms ease-in-out;
+}
+
+.nav_buttons a{
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+}
+
+.nav_buttons:hover {
+	background-color: #2B7A78;
+	font-weight: 600;
+
+}
+
+#header {
+	background: conic-gradient(from 90deg at 50% 80%, #3AAFA9, #DEF2F1);
+	padding: 0 0 9em 0;
+}
+
+#button1 {
+	padding: 1em;
+	background-color:  #17252A;
+	transition: 200ms ease-in-out;
+}
+
+#button1 a{
+	text-decoration: none;
+	font-size: 18px;
+	color:  white;
+	font-weight: 600;
+}
+
+#button1:hover {
+	background-color: #2B7A78;
+	font-weight: 600;
+}
+
+#image{
+	border-radius: 50%;
+}
+
+#img{
+	text-align: center;
+}
+
+#my_info{
+	text-align: left;
+	padding-top: 2em;
+}
+
+#p1 {
+	font-size: 27px;
+	opacity: 0.7;
+}
+
+#p2 {
+	font-size: 60px;
+	font-weight: 600;
+}
+
+#p3{
+	font-size: 35px;
+}
+
+#section1 {
+	position: relative;
+	background: #17252A;
+	color: white;
+	margin-top: 3em;
+	padding: 2em;
+	box-shadow: 0 0 10px black;
+	border-radius: 15px;
+	z-index: 1;
+}
+
+#section1:hover {
+	color: #17252A;
+}
+
+
+#section1::after {
+	content: "";
+	position: absolute;
+	background: #DEF2F1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 15px;
+	z-index: -1;
+	transition: transform 300ms ease-in;
+	transform: scaleX(0);
+	transform-origin: right;
+}
+
+#section1:hover::after{
+	transform: scaleX(1.0);
+	transform-origin: left;
+}
+
+#sp1 {
+	font-size: 25px;
+	font-weight: 600;
+	
+}
+
+#sp3 {
+	font-size: 20px;
+}
+
+#section2 {
+	box-shadow: 0 0 20px;
+	border-radius: 20px;
+	margin-top: 5em;
+	padding: 3em;
+	background-color: #DEF2F1;
+}
+
+#section2 > p {
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.skill_nm {
+	color: white;
+	font-size: 20px;
+}
+
+#skills{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+.skills_icon {
+	transition: 300ms ease-out;
+}
+
+.skills_icon:hover {
+	width: 250px;
+	height: 250px;
+}
+
+#skills > div {
+	background-color: #17252A;
+	padding: 3em 1em 3em 1em;
+	text-align: center;
+	border-radius: 20px;
+}
+
+#ic1 {
+	margin-right: 0.5em;
+}
+
+#ic2 {
+	margin: 0 0.5em 0 0.5em;
+}
+
+#ic3 {
+	margin: 0 0.5em 0 0.5em;
+}
+
+#ic4 {
+	margin-left: 0.5em;
+}
+
+#myp {
+	display: grid;
+	grid-template-columns: auto auto;
+	column-gap: 2em;
+
+}
+
+#projects {
+	box-shadow: 0 0 20px;
+	border-radius: 20px;
+	background-color: #DEF2F1;
+	padding: 3em 3em 0 3em;
+	margin-top: -40em;
+}
+
+#myp img {
+	width: 100%;
+	height: 100%;
+}
+
+
+#section3 {
+	background-color: #17252A;
+}
+
+#my_projects {
+	color: white;
+	text-align: center;
+	padding: 2em 0 18em 0;
+	margin-top: 4em;
+	font-size: 40px;
+	font-weight: 600;
+}
+
+
+.grid_comp {
+	margin-bottom: 2em;
+	position: relative;
+	color: white;
+}
+
+#sc {
+	grid-column: 1/3;
+}
+
+#ss {
+	grid-column: 1/3;
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.short_info{
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.short_info h4 a{
+	color: white;
+	text-decoration: none;
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.grid_comp:hover .short_info{
+	visibility: visible;
+	top: 40px;
+	left: 40px;
+	transition: 700ms;
+}
+
+
+.grid_comp:hover .overlay {
+	top: 10px;
+	left: 10px;
+    background: linear-gradient(135deg, #17252A, #396b69, rgba(192,206,206,0.8845000000000001));
+	transition: 500ms;
+}
+
+#ss {
+	padding-bottom: 1em;
+}
+
+footer{
+	background: conic-gradient(from 180deg at 50% 50%, #3AAFA9, #DEF2F1);
+	margin-top: 5em;
+}
+
+#footer{
+	display: flex;
+	justify-content: space-between;
+	padding: 5em 0 5em 0;
+}
+
+#footer1 {
+	display: flex;
+	column-gap: 2.5em;
+	justify-content: left;
+}
+
+#footer1 div{
+	font-size: 22px;
+	font-weight: 700;
+}
+
+#footer2 {
+	display: flex;
+	justify-content: right;
+	column-gap: 5em;
+}
+
+
