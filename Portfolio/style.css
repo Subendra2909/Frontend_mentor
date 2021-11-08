@@ -2,20 +2,26 @@
     box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Philosopher', serif;
 }
 
+
 header{
 	overflow-x: hidden;
 }
-nav{
+
+#menu_button {
 	display: flex;
 	justify-content: right;
 	padding-bottom: 5em;
 }
 
-.nav_buttons {
+#menu_button div {
 	border: 2px solid #17252A;
 	border-radius: 30px;
 	padding: 1em;
@@ -158,12 +164,12 @@ nav{
 }
 
 .skills_icon {
-	transition: 300ms ease-out;
+	transition: transform 300ms ease-out;
+	transform: scale(0.8);
 }
 
 .skills_icon:hover {
-	width: 250px;
-	height: 250px;
+	transform: scale(1.0);
 }
 
 #skills > div {
@@ -208,7 +214,6 @@ nav{
 	width: 100%;
 	height: 100%;
 }
-
 
 #section3 {
 	background-color: #17252A;
@@ -280,32 +285,536 @@ nav{
 	padding-bottom: 1em;
 }
 
+#section4 {
+	background-color: #17252A;
+	border-radius: 20px;
+	margin-top: 3em;
+	box-shadow: 0 0 10px;
+	padding: 3em;
+	display: flex;
+
+}
+
+#contact {
+	font-size: 25px;
+	font-weight: 600;
+	color: white;
+}
+
+#contact1, #contact2, #emailid {
+	color: white;
+	font-size: 18px;
+}
+
+#contact_icons{
+	display: flex;
+	column-gap: 4em;
+	margin: 3em 0 3em 15em;
+
+}
+
+#contact_icons div{
+	background-color: #DEF2F1;
+	padding: 1.2em;
+	border-radius: 20px;
+}
+
+.c_icons {
+	transition: 200ms ease-in;
+}
+
+#section4:hover .c_icons{
+	border-radius: 50%;
+}
+
+
+
 footer{
-	background: conic-gradient(from 180deg at 50% 50%, #3AAFA9, #DEF2F1);
+	background: conic-gradient(from 90deg at 34% 65%, #3AAFA9, #DEF2F1);
 	margin-top: 5em;
 }
 
 #footer{
-	display: flex;
-	justify-content: space-between;
 	padding: 5em 0 5em 0;
 }
 
 #footer1 {
 	display: flex;
 	column-gap: 2.5em;
-	justify-content: left;
+	justify-content: center;
 }
 
 #footer1 div{
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 700;
 }
 
-#footer2 {
-	display: flex;
-	justify-content: right;
-	column-gap: 5em;
+#footer a{
+	text-decoration: none;
+	color: #17252A;
 }
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+	.#menu_button div{
+		margin: 2em 1em 1em 1em;
+	}
+
+	.c_icons{
+		margin-bottom: 1em;
+	}
+
+	footer{
+		background: conic-gradient(from 90deg at 30% 65%, #3AAFA9, #DEF2F1);
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+	.c_icons{
+		margin: 3.5em 0 3.5em 0;
+	}
+
+	.skills_icon {
+		transition: transform 300ms ease-out;
+		transform: scale(0.6);
+
+	}
+
+	.skills_icon:hover {
+		transform: scale(0.8);
+	}
+
+	#skills > div {
+		padding: 1.5em 0.5em 1.5em 0.4em;
+	}
+
+	#menu_button div {
+		margin: 2em 0.5em 1em 0.5em;
+		padding: 0.8em;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	#menu_button {
+		justify-content: center;
+	}
+
+	#menu_button div {
+		margin: 2em 0.4em 1em 0.4em;
+		padding: 0.8em;
+	}
+
+	#img img{
+		width: 275px;
+		height: 275px;
+	}
+
+	#p1{
+		font-size: 18px;
+	}
+
+	#p2 {
+		font-size: 35px;
+	}
+
+	#p3 {
+		font-size: 30px;
+	}
+
+	#skills > div {
+		padding: 0.8em 0em 0.8em 0em;
+
+	}
+
+	#skills img{
+		width: 130px;
+	}
+
+	.c_icons{
+		margin: 3.5em 0 3.5em 0;
+	}
+
+	#contact_icons {
+		margin: 3em 0 3em 3em;
+	}
+
+	#section4 {
+		padding: 1em;
+	}
+
+	#contact{
+		font-size: 20px;
+		margin-bottom: 2em;
+		margin-top: 1em;
+	}
+
+	#contact1, #contact2, #emailid {
+		font-size: 16px;
+	}
+
+	#footer1{
+		column-gap: 2em;
+		font-size: 12px;
+	}
+
+	footer{
+		background: conic-gradient(from 90deg at 25% 65%, #3AAFA9, #DEF2F1);
+	}
+
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+	body {
+		overflow-x: hidden;
+    }
+
+	/*.nav_buttons {
+		border: 2px solid #17252A;
+		border-radius: 30px;
+		padding: 0;
+		margin: 1em;
+		text-align: center;
+	}*/
+
+    nav{
+		justify-content: center;
+		background-color: #17252A;
+	}
+
+	#menu_button {
+		padding: 0;
+		justify-content: center;
+	}
+
+	#menu_button div {
+		padding: 0;
+		margin: 0.5em;
+		font-size: 13px;
+	}
+
+
+	#img img{
+		width: 200px;
+		height: 200px;
+		margin-top: 1.5em;
+	}
+
+	#p1{
+		font-size: 15px;
+	}
+
+	#p2 {
+		font-size: 25px;
+	}
+
+	#p3 {
+		font-size: 20px;
+	}
+
+	#sp1 {
+		font-size: 18px;
+	}
+
+	#sp3 {
+		font-size: 15px;
+	}
+
+	#skills > div {
+		padding: 1em 0 1em 0;
+	}
+
+	#skills {
+	}
+
+	#skills img{
+		width: 60px;
+		height: 100px;
+	}
+
+	.skill_nm{
+		font-size: 12px;
+	}
+
+	.c_icons{
+		margin: 3.5em 0 3.5em 0;
+	}
+
+	#contact_icons {
+		margin: 3em 0 3em 3em;
+	}
+
+	#section4 {
+		padding: 1em;
+	}
+
+	#contact{
+		font-size: 20px;
+		margin-bottom: 2em;
+		margin-top: 1em;
+	}
+
+	#contact1, #contact2, #emailid {
+		font-size: 16px;
+	}
+
+	#footer1{
+		display: flex;
+		flex-direction: column;
+		column-gap: 1em;
+		font-size: 8px;
+	}
+
+	footer{
+		background: conic-gradient(from 90deg at 25% 65%, #3AAFA9, #DEF2F1);
+	}
+
+	.short_info h4 a{
+		font-size: 10px;
+		font-weight: 400;
+	}
+
+	.grid_comp:hover .short_info{
+		visibility: visible;
+		top: 15px;
+		left: 15px;
+	}
+
+	#myp{
+		display: grid;
+		grid-template-columns: auto;
+	}
+
+	.c_icons{
+		margin: 3.8em 0 3.8em 0;
+	}
+
+	#contact_icons {
+		text-align: center;
+		transform: scale(0.5);
+		margin: 0;
+		justify-content: center;
+	}
+
+
+	#contact{
+		text-align: center;
+		font-size: 15px;
+		margin-bottom: 1em;
+		margin-top: 1em;
+	}
+
+	#contact1, #contact2, #emailid {
+		font-size: 12px;
+		text-align: center;
+	}
+
+	#section4 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#footer1 div{
+	    font-size: 12px;
+	    font-weight: 700;
+	    text-align: center;
+    }
+
+    #footer {
+    	padding: 2em 0 2em 0;
+    }
+
+    footer{
+		background: linear-gradient(to bottom, #DEF2F1, #3AAFA9);
+	}
+
+
+}
+
+@media(max-width: 599px){
+	body {
+		overflow-x: hidden;
+    }
+
+    /*nav{
+    	background-color: #17252A;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}*/
+
+	 nav{
+		justify-content: center;
+		background-color: #17252A;
+	}
+
+	#menu_button {
+		padding: 0;
+		justify-content: center;
+	}
+
+	#menu_button div {
+		padding: 0;
+		margin: 0.5em;
+		font-size: 13px;
+	}
+
+	#header {
+		background: linear-gradient(to bottom, #3AAFA9, #DEF2F1);
+	}
+
+	#main_head{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#p1, #p2, #p3, #but {
+		text-align: center;
+	}
+
+
+
+	#img img{
+		width: 200px;
+		height: 200px;
+		margin-top: 1.5em;
+	}
+
+	#p1{
+		font-size: 15px;
+	}
+
+	#p2 {
+		font-size: 25px;
+	}
+
+	#p3 {
+		font-size: 20px;
+	}
+
+	#sp1 {
+		font-size: 18px;
+	}
+
+	#sp3 {
+		font-size: 15px;
+	}
+
+	#skills > div {
+		padding: 1em 0 1em 0;
+	}
+
+	#skills {
+	}
+
+	#skills img{
+		width: 35px;
+		height: 60px;
+	}
+
+	.skill_nm{
+		font-size: 8px;
+	}
+
+	.c_icons{
+		margin: 3.5em 0 3.5em 0;
+	}
+
+	#contact_icons {
+		margin: 3em 0 3em 3em;
+	}
+
+	#section4 {
+		padding: 1em;
+	}
+
+	#contact{
+		font-size: 20px;
+		margin-bottom: 2em;
+		margin-top: 1em;
+	}
+
+	#contact1, #contact2, #emailid {
+		font-size: 16px;
+	}
+
+	#footer1{
+		display: flex;
+		flex-direction: column;
+		column-gap: 1em;
+		font-size: 8px;
+	}
+
+	footer{
+		background: conic-gradient(from 90deg at 25% 65%, #3AAFA9, #DEF2F1);
+	}
+
+	.short_info h4 a{
+		font-size: 10px;
+		font-weight: 400;
+	}
+
+	.grid_comp:hover .short_info{
+		visibility: visible;
+		top: 15px;
+		left: 15px;
+	}
+
+	#myp{
+		display: grid;
+		grid-template-columns: auto;
+	}
+
+	.c_icons{
+		margin: 3.8em 0 3.8em 0;
+	}
+
+	#contact_icons {
+		text-align: center;
+		transform: scale(0.5);
+		margin: 0;
+		justify-content: center;
+	}
+
+
+	#contact{
+		text-align: center;
+		font-size: 15px;
+		margin-bottom: 1em;
+		margin-top: 1em;
+	}
+
+	#contact1, #contact2, #emailid {
+		font-size: 12px;
+		text-align: center;
+	}
+
+	#section4 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#footer1 div{
+	    font-size: 12px;
+	    font-weight: 700;
+	    text-align: center;
+    }
+
+    #footer {
+    	padding: 2em 0 2em 0;
+    }
+
+    footer{
+		background: linear-gradient(to bottom, #DEF2F1, #3AAFA9);
+	}
+
+	#section1, #section2, #section3, #section4, #projects {
+		border-radius: 0px;
+	}
+}
+
 
 

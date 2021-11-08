@@ -18,15 +18,18 @@
 		
 
     	<div class="container-fluid" id="header">
-    		<nav>			
-				<div class="nav_buttons"><a href="">HOME</a></div>
-				<div class="nav_buttons"><a href="">ABOUT</a></div>
-				<div class="nav_buttons"><a href="">SKILLS</a></div>
-				<div class="nav_buttons"><a href="">PROJECTS</a></div>
-				<div class="nav_buttons"><a href="">CONTACT</a></div>
+    		
+    		<nav>
+    		<div id="menu_button">			
+				<div class="nav_buttons"><a href="#">HOME</a></div>
+				<div class="nav_buttons"><a href="#section1">ABOUT</a></div>
+				<div class="nav_buttons"><a href="#section2">SKILLS</a></div>
+				<div class="nav_buttons"><a href="#section3">PROJECTS</a></div>
+				<div class="nav_buttons"><a href="#section4">CONTACT</a></div>
+			</div>
 			</nav>
 
-			<div class="row">
+			<div class="row" id="main_head">
 				<div class="col" id="img"> 
 					<img id="image" src="profile-pic.png" width="350px" height="350px">
 				</div>
@@ -34,7 +37,7 @@
 					<p id="p1">HEY THERE!</p>
 					<p id="p2">I AM SUBENDRA</p>
 					<p id="p3">FRONT-END DEVELOPER</p>
-					<button id="button1" class="border border-dark rounded-pill"><a href="">SEE MY WORK</a></button>
+					<div id="but"><button id="button1" class="border border-dark rounded-pill"><a href="#section3">SEE MY WORK</a></button></div>
 				<div>
 			</div>
 		</div>
@@ -42,7 +45,7 @@
 
 	<section id="section1" class="container">
 		<p id="sp1">ABOUT ME</p>
-		<p id="sp3">I am an undergraduate student in National Institute of Technology, Raipur. I am a Front-end developer currently exploring HTML,CSS and Javascript. I am passionate about my work.</p>
+		<p id="sp3">I am an currently undergraduate student in National Institute of Technology, Raipur. I am a Front-end developer currently exploring HTML,CSS and Javascript. I am passionate about my work.</p>
 	</section>
 
 	<section id="section2" class="container">
@@ -115,23 +118,32 @@
 		</div>
 	</section>
 
+	<section id="section4" class="container">
+		<div id="contact_info">
+			<p id="contact">CONTACT INFORMATION:</p>
+			<p id="contact1">Feel free to contact me.</p>
+			<p id="contact2">You can contact me through social media or through email or phone.</p>
+			<p id="emailid">e-mail : subendra.29@gmail.com</p>
+		</div>
+
+		<div id="contact_icons">
+			<div class="c_icons"><a href=""><img src="icons8-github.svg"></a></div>
+			<div class="c_icons"><a href=""><img src="icons8-instagram.svg"></a></div>
+			<div class="c_icons"><a href=""><img src="icons8-twitter-circled.svg"></a></div>
+		</div>
+	</section>
+
 	<footer>
 		<div class="container" id="footer">
 			<div id="footer1">
-				<div>HOME</div>
-				<div>ABOUT</div>
-				<div>SKILLS</div>
-				<div>PROJECTS</div>
-				<div>CONTACT</div>			
+				<div><a href="#">HOME</a></div>
+				<div><a href="#section1">ABOUT</a></div>
+				<div><a href="#section2">SKILLS</a></div>
+				<div><a href="#section3">PROJECTS</a></div>
+				<div><a href="#section4">CONTACT</a></div>			
 			</div>
-
-			<div id="footer2">
-				<div><img src="icons8-github.svg"></div>
-				<div><img src="icons8-instagram.svg"></div>
-				<div><img src="icons8-twitter-circled.svg"></div>
-			</div>			
+			
 		</div>
-
 
 	</footer>
 
