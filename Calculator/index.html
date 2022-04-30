@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+
+<body>
+  <div class="cal_grid">
+    <div class="top">
+      <p id="calc">calc</p>
+      <div id="toggle">
+        <div id="numbers">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <div id="change">
+          <div id="theme1"></div>
+          <div id="theme2"></div>
+          <div id="theme3"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="output" >
+      <div id="l_op" data-leftOperand></div>
+      <div data-rightOperand></div>
+    </div>
+
+    <div id="buttons_area">
+      <button data-number class="key">7</button>
+      <button data-number class="key">8</button>
+      <button data-number class="key">9</button>
+      <button id="del" data-delete  class="key">DEL</button>
+      <button data-number  class="key">4</button>
+      <button data-number  class="key">5</button>
+      <button data-number class="key">6</button>
+      <button data-operation class="key">+</button>
+      <button data-number class="key">1</button>
+      <button data-number class="key">2</button>
+      <button data-number class="key">3</button>
+      <button data-operation class="key">-</button>
+      <button data-number class="key">.</button>
+      <button data-number class="key">0</button>
+      <button data-operation class="key">/</button>
+      <button data-operation class="key">*</button>
+    </div>
+    <div class="bottom">
+      <button class="reset" data-reset>RESET</button>
+      <button class="equal" data-equal>=</button>
+    </div> 
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">SUBENDRA</a>
+  </div>
+</body>
+</html>
