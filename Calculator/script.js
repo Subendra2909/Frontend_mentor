@@ -135,9 +135,12 @@ const toggle = document.getElementById('change')
 const body = document.querySelector('body')
 const buttonArea = document.getElementById('buttons_area')
 const deleteB = document.getElementById('del')
-const equalto = document.getElementsByClassName('equal')
-const resetn = document.getElementsByClassName('reset')
-const keys = document.getElementsByClassName('key')
+const equalto = document.getElementById('equal')
+const resetn = document.getElementById('reset')
+const keys = document.querySelector('.key')
+const calc = document.getElementById('calc')
+const bottom = document.getElementById('bottom')
+const output = document.getElementById('output')
 
 
 
@@ -145,5 +148,12 @@ toggle.onclick = function(){
     toggle.classList.toggle('active')
     body.classList.toggle('active')
     buttonArea.classList.toggle('active')
-
+    calc.classList.toggle('active')
+    equalto.classList.toggle('active')
+    resetn.classList.toggle('active')
+    deleteB.classList.toggle('active')
+    bottom.classList.toggle('active')
+    keys.classList.toggle('active')
+    output.classList.toggle('active')
 }
+

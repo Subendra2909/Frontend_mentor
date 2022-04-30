@@ -26,6 +26,10 @@ body{
     font-weight: 900;
 }
 
+#calc.active {
+    color: hsl(0, 0%,100%);
+}
+
 
 #toggle {
     display: flex;
@@ -47,6 +51,7 @@ body{
     display: flex;
     justify-content: space-around;
     font-size: 13px;
+    color: hsl(0, 0%,100%);
 }
 
 #change {
@@ -70,7 +75,7 @@ body{
 
 
 body.active {
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(268, 75%, 9%);
 }
 
 #theme1 {
@@ -82,11 +87,19 @@ body.active {
 }
 
 #change.active #theme1 {
-    left: 20px;
+    left: 20px;    
+}
+
+#change.active #theme2, #change.active #theme3{
+    background-color: hsl(268, 71%, 12%);
+} 
+
+#change.active {
+    background-color: hsl(268, 71%, 12%);
 }
 
 
-.output {
+#output {
     background-color: hsl(224, 36%, 15%);
     margin: 10px 10px 20px 10px;
     padding: 1.5em;
@@ -101,8 +114,12 @@ body.active {
     word-break: break-all;
 }
 
-.output div {
+#output div {
     min-height: 25px;
+}
+
+#output.active {
+    background-color: hsl(268, 71%, 12%);
 }
 
 #l_op {
@@ -126,7 +143,21 @@ body.active {
     padding: 10px;
 }
 
+#buttons_area.active {
+    background-color: hsl(268, 71%, 12%);
+}
 
+#buttons_area.active > button {
+    background-color:  hsl(281, 89%, 26%);
+    box-shadow: 0 4px 2px  hsl(285, 91%, 52%);
+    color: hsl(52, 100%, 62%);
+}
+
+#buttons_area.active > button:hover {
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0 4px 2px hsl(35, 11%, 61%);
+    color: hsl(60, 10%, 19%);
+}
 
 .key {
     cursor: pointer;
@@ -141,12 +172,19 @@ body.active {
     
 }
 
+
+
 button:hover {
-    background-color: aqua;
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0 4px 2px hsl(224, 28%, 35%);
+    color: hsl(0, 0%,100%);
+    transition: 0.5s;
 }
 
 
-.bottom {
+
+
+#bottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -157,7 +195,7 @@ button:hover {
     border-radius: 0 0 5px 5px;
 }
 
-.bottom > button {
+#bottom > button {
     margin: 10px 10px 20px 10px;
     padding: 0.5em;
     border-radius: 5px;
@@ -167,12 +205,32 @@ button:hover {
     outline: none;
 }
 
+#bottom.active {
+    background-color: hsl(268, 71%, 12%);
+}
 
-
-.reset {
+#reset {
     background-color: hsl(225, 21%, 49%);
     box-shadow: 0 4px 2px hsl(224, 28%, 35%);
     color: hsl(0, 0%,100%);
+}
+
+#reset.active, #del.active {
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0 4px 2px hsl(290, 70%, 36%);
+    color: hsl(0, 0%,100%);
+}
+
+#reset.active:hover {
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0 4px 2px hsl(35, 11%, 61%);
+    color: hsl(60, 10%, 19%);
+}
+
+#reset:hover, #del:hover, #equal:hover {
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    box-shadow: 0 4px 2px hsl(28, 16%, 65%);
 }
 
 #del {
@@ -181,15 +239,25 @@ button:hover {
     color: hsl(0, 0%,100%);
 }
 
-.equal {
+
+#equal {
     color: hsl(0, 0%,100%);
     background-color: hsl(6, 63%, 50%);
     box-shadow: 0 4px 2px hsl(6, 70%, 34%);
 }
 
-.equal.active {
-    background-color: hsl(25, 98%, 40%);
-    box-shadow: 0 4px 2px hsl(25, 99%, 27%);
+
+
+#equal.active {
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0 4px 2px hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
+}
+
+#equal.active:hover {
+    background-color:  hsl(281, 89%, 26%);
+    box-shadow: 0 4px 2px  hsl(285, 91%, 52%);
+    color: hsl(52, 100%, 62%);
 }
 
 
