@@ -277,5 +277,6 @@ button:hover {
 .attribution { 
     font-size: 11px; text-align: center;
     margin: 11rem 0 0 0;
+    color: hsl(28, 16%, 65%);
 }
-.attribution a { color: hsl(0, 0%,100%); }
+.attribution a { color:bisque; }
